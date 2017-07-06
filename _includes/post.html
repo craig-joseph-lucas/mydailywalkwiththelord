@@ -1,0 +1,10 @@
+<div class="post__tags">
+    <span class="post__tags-header">
+    Posted in: 
+    </span>
+  {% for tag in page.tags %}
+    <a href="/tags#{{ tag }}" class="tag">{{ tag }}</a>
+  {% endfor %}
+</div>  
+
+{{ page | tags }}

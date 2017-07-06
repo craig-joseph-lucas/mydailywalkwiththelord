@@ -1,0 +1,28 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        {% include head-meta.html %}
+        {% include head-styles.html %}
+        {% include head-scripts.html %}
+    </head>
+  <body>
+          
+
+    {% include header.html %}
+<div class="grid {{ page.pageType }}">
+    
+    {% include left-sidebar.html %}
+    
+    <div class="grid__cell grid__main-content">
+        {{ content }}
+    </div>  
+    
+</div> 
+ 
+  
+    {% include footer.html %}
+    {% include footer-scripts.html %}
+      
+    
+  </body>
+</html>

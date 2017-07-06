@@ -1,0 +1,29 @@
+{
+   "name": "mydailywalkwiththelord.com",
+   "version": "1.0.0",
+   "description": "Dependencies for mydailywalkwiththelord.com",
+   "main": "gulpfile.js",
+   "scripts": {
+      "test": "echo \"Error: no test specified\" && exit 1"
+   },
+   "repository": {
+      "type": "git",
+      "url": "git+https://github.com/craig-joseph-lucas/mydailywalkwiththelord.git"
+   },
+   "author": "craig.joseph.lucas <craig.joseph.lucas@gmail.com>",
+   "license": "ISC",
+   "bugs": {
+      "url": "https://github.com/craig-joseph-lucas/mydailywalkwiththelord/issues"
+   },
+   "homepage": "https://github.com/craig-joseph-lucas/mydailywalkwiththelord/blob/master/README.md",
+   "devDependencies": {
+      "browser-sync": "^2.18.12",
+      "gulp": "^3.9.1",
+      "gulp-autoprefixer": "^4.0.0",
+      "gulp-concat": "^2.6.1",
+      "gulp-cssnano": "^2.1.2",
+      "gulp-sass": "^3.1.0",
+      "gulp-uglify": "^3.0.0",
+      "susy": "^2.2.12"
+   }
+}

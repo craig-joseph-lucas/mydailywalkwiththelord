@@ -1,0 +1,38 @@
+<script src="//use.edgefonts.net/mr-bedfort;stencil-std;abril-fatface;droid-sans.js"></script>
+
+
+<script
+  src="https://code.jquery.com/jquery-3.2.1.min.js"
+  integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
+  crossorigin="anonymous"></script>
+
+
+
+
+<script>
+$(function() {
+
+    var $sidebar   = $(".grid__sidebar-left"), 
+        $window    = $(window),
+        offset     = $sidebar.offset(),
+        topPadding = 15,
+        mq = window.matchMedia( "(min-width: 1024px)" );
+
+    $window.scroll(function() {
+        if ($window.scrollTop() > offset.top && mq.matchesx) {
+            $sidebar.stop().animate({
+                marginTop: $window.scrollTop() - offset.top + topPadding
+            });
+        if($(window).scrollTop() + $(window).height() == $(document).height()) {
+             $(window).unbind('scroll');
+        }
+        } else {
+            $sidebar.stop().animate({
+                marginTop: 0
+            });
+        }
+    });
+    
+});
+
+</script>

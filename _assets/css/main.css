@@ -1,0 +1,181 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+/* line 6, /Users/craigandjasper/Documents/my-awesome-site/_assets/css/util/_reset.scss */
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline; }
+
+/* HTML5 display-role reset for older browsers */
+/* line 16, /Users/craigandjasper/Documents/my-awesome-site/_assets/css/util/_reset.scss */
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
+  display: block; }
+
+/* line 19, /Users/craigandjasper/Documents/my-awesome-site/_assets/css/util/_reset.scss */
+body {
+  line-height: 1; }
+
+/* line 22, /Users/craigandjasper/Documents/my-awesome-site/_assets/css/util/_reset.scss */
+ol, ul {
+  list-style: none; }
+
+/* line 25, /Users/craigandjasper/Documents/my-awesome-site/_assets/css/util/_reset.scss */
+blockquote, q {
+  quotes: none; }
+
+/* line 29, /Users/craigandjasper/Documents/my-awesome-site/_assets/css/util/_reset.scss */
+blockquote:before, blockquote:after {
+  content: '';
+  content: none; }
+
+/* line 34, /Users/craigandjasper/Documents/my-awesome-site/_assets/css/util/_reset.scss */
+q:before, q:after {
+  content: '';
+  content: none; }
+
+/* line 38, /Users/craigandjasper/Documents/my-awesome-site/_assets/css/util/_reset.scss */
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+
+/* line 1, /Users/craigandjasper/Documents/my-awesome-site/_assets/css/util/_base.scss */
+h1 {
+  font-family: droid-sans, sans-serif;
+  font-size: 38px;
+  font-weight: bold; }
+
+/* line 7, /Users/craigandjasper/Documents/my-awesome-site/_assets/css/util/_base.scss */
+p {
+  font-family: arial, sans-serif;
+  font-size: 15px;
+  line-height: 19px;
+  margin-bottom: 20px; }
+
+/* line 14, /Users/craigandjasper/Documents/my-awesome-site/_assets/css/util/_base.scss */
+body {
+  width: 100%; }
+
+/* line 16, /Users/craigandjasper/Documents/my-awesome-site/_assets/css/util/_base.scss */
+img {
+  max-width: 100%;
+  height: auto; }
+
+/* line 1, /Users/craigandjasper/Documents/my-awesome-site/_assets/css/blocks/_pri-hdr.scss */
+.pri-hdr {
+  position: relative; }
+
+/* line 5, /Users/craigandjasper/Documents/my-awesome-site/_assets/css/blocks/_pri-hdr.scss */
+.pri-hdr__img {
+  position: relative;
+  overflow: hidden;
+  background: url("/home.png") no-repeat scroll 50% 0%;
+  background-size: contain;
+  max-height: 420px;
+  height: 100%; }
+  @media (min-width: 1024px) {
+    /* line 5, /Users/craigandjasper/Documents/my-awesome-site/_assets/css/blocks/_pri-hdr.scss */
+    .pri-hdr__img {
+      background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url("/home.png") no-repeat scroll 50% 50%;
+      background-size: 100% auto; } }
+  /* line 22, /Users/craigandjasper/Documents/my-awesome-site/_assets/css/blocks/_pri-hdr.scss */
+  .pri-hdr__img .dummy {
+    padding-top: 40%; }
+    @media only screen and (min-width: 960px) {
+      /* line 22, /Users/craigandjasper/Documents/my-awesome-site/_assets/css/blocks/_pri-hdr.scss */
+      .pri-hdr__img .dummy {
+        padding-top: 33.333%; } }
+    @media only screen and (min-width: 1200px) {
+      /* line 22, /Users/craigandjasper/Documents/my-awesome-site/_assets/css/blocks/_pri-hdr.scss */
+      .pri-hdr__img .dummy {
+        padding-top: 25%; } }
+
+/* line 34, /Users/craigandjasper/Documents/my-awesome-site/_assets/css/blocks/_pri-hdr.scss */
+.pri-hdr__img-verse {
+  margin: 0 auto;
+  font-family: droid-sans, sans-serif;
+  font-size: 16px;
+  line-height: 20px;
+  color: #000;
+  text-transform: uppercase; }
+  @media (min-width: 1024px) {
+    /* line 34, /Users/craigandjasper/Documents/my-awesome-site/_assets/css/blocks/_pri-hdr.scss */
+    .pri-hdr__img-verse {
+      position: absolute;
+      top: 50%;
+      color: #fff;
+      right: 25px;
+      width: 60%;
+      font-size: 30px;
+      right: 104px;
+      line-height: 38px;
+      transform: translateY(-50%); } }
+
+/* line 54, /Users/craigandjasper/Documents/my-awesome-site/_assets/css/blocks/_pri-hdr.scss */
+.pri-hdr__img-verse-ref {
+  text-decoration: underline;
+  font-family: stencil-std, sans-serif;
+  margin-bottom: 8px; }
+
+@media (min-width: 1024px) {
+  /* line 2, /Users/craigandjasper/Documents/my-awesome-site/_assets/css/blocks/_grid.scss */
+  .grid {
+    max-width: 1200px;
+    margin: 30px auto 0;
+    display: flex; }
+  /* line 8, /Users/craigandjasper/Documents/my-awesome-site/_assets/css/blocks/_grid.scss */
+  .grid__cell {
+    flex: 1; }
+  /* line 12, /Users/craigandjasper/Documents/my-awesome-site/_assets/css/blocks/_grid.scss */
+  .grid__sidebar-left {
+    flex-grow: 0;
+    flex-shrink: 0;
+    flex-basis: 25%;
+    display: none; } }
+  @media (min-width: 1024px) and (min-width: 1024px) {
+    /* line 12, /Users/craigandjasper/Documents/my-awesome-site/_assets/css/blocks/_grid.scss */
+    .grid__sidebar-left {
+      display: block; } }
+
+@media (min-width: 1024px) {
+  /* line 22, /Users/craigandjasper/Documents/my-awesome-site/_assets/css/blocks/_grid.scss */
+  .grid__main-content {
+    max-width: 700px;
+    flex-grow: 0;
+    flex-shrink: 0;
+    flex-basis: 75%;
+    margin-left: 50px; } }
+
+/* line 1, /Users/craigandjasper/Documents/my-awesome-site/_assets/css/blocks/_sidebar.scss */
+.sidebar {
+  display: none; }
+  @media (min-width: 1024px) {
+    /* line 1, /Users/craigandjasper/Documents/my-awesome-site/_assets/css/blocks/_sidebar.scss */
+    .sidebar {
+      display: block; } }
+
+/* line 2, /Users/craigandjasper/Documents/my-awesome-site/_assets/css/blocks/_post.scss */
+.post__title {
+  margin-bottom: 10px; }
+
+/* line 1, /Users/craigandjasper/Documents/my-awesome-site/_assets/css/blocks/_prayer-requests.scss */
+.prayer-requests {
+  background: #668FA4;
+  color: #fff;
+  height: 50px;
+  padding: 20px 25px;
+  font-size: 30px;
+  line-height: 38px;
+  font-family: droid-sans, sans-serif;
+  text-transform: uppercase;
+  letter-spacing: 2px; }
+
+/* line 1, /Users/craigandjasper/Documents/my-awesome-site/_assets/css/blocks/_pri-footer.scss */
+.pri-footer {
+  margin-top: 50px; }
+
+/*# sourceMappingURL=main.css.map */

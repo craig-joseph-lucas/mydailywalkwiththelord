@@ -1,0 +1,63 @@
+.pri-hdr {
+    position: relative;
+}
+
+.pri-hdr__img {
+    position: relative;
+    overflow: hidden;
+    background: url("/home.png") no-repeat scroll 50% 0%;
+    background-size: contain;
+    max-height: 420px;
+    height: 100%;    
+    
+    @include desktop {
+    
+        background:linear-gradient(
+          rgba(0, 0, 0, 0.6),
+          rgba(0, 0, 0, 0.6)
+        ),  url("/home.png") no-repeat scroll 50% 50%;
+        background-size: 100% auto;
+    }
+    
+    .dummy {
+        padding-top: 37.6%;
+        
+        @media only screen and (min-width:960px) {
+            padding-top: 33.333%;
+        }
+        @media only screen and (min-width:1200px) {
+            padding-top: 25%;
+        }        
+    }        
+}
+ 
+.pri-hdr__img-verse {
+    margin: 0 auto;  
+    font-family: droid-sans, sans-serif;
+    font-size: 14px;
+    line-height: 17px;
+    color: #fff;
+    padding: 11px;
+    background:linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6));    
+    
+    
+    @include desktop {
+        position: absolute;
+        top: 50%;
+        background: none;
+        padding: 0;
+        text-transform: uppercase;
+        right: 25px;
+        width: 60%;        
+        font-size: 30px;
+        right: 104px;
+        line-height: 38px;
+        transform: translateY(-50%);
+    }    
+}
+
+.pri-hdr__img-verse-ref {
+  text-decoration: underline;
+  font-family: stencil-std, sans-serif;
+  margin-bottom: 8px;    
+}

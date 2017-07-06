@@ -1,0 +1,47 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        {% include head-meta.html %}
+        {% include head-styles.html %}
+        {% include head-scripts.html %}
+    </head>
+  <body>
+      
+      
+
+    {% include header.html %}
+
+      
+      
+
+<div class="grid {{ page.pageType }}">
+    
+    {% include left-sidebar.html %}
+    
+    <div class="grid__cell grid__main-content">
+        <h1 class="post__title">{{ page.title }}</h1>
+        
+        {{ content }}
+            <div class="post__tags">
+                <span class="post__tags-header">
+                Posted in: 
+                </span>
+              {% for tag in page.tags %}
+                <a href="/tag/{{ tag }}" class="tag">{{ tag }}</a>
+              {% endfor %}
+            </div>          
+        
+    </div>  
+    
+</div>            
+    
+      
+
+
+
+
+    {% include footer.html %}
+      
+  <script src="//use.edgefonts.net/stencil-std.js"></script>    
+  </body>
+</html>
