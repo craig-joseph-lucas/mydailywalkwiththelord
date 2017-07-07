@@ -1,0 +1,112 @@
+<!doctype html>
+<html lang="en">
+    <head>
+          <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>
+     My Daily Walk with the Lord
+    
+  </title>
+  <meta name="robots" content="noindex">
+  <meta name="description" content="Write an awesome description for your new site here. You can edit this line in _config.yml. It will appear in your document head meta (for Google search results) and in your feed.xml site description.
+">
+  <meta name="viewport" content="width=device-width">
+
+        <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Source+Sans+Pro:200,300,400,700" media="all">
+
+ <link rel="stylesheet" href="/css/main.css"/>
+
+
+        
+    </head>
+  <body>
+          
+
+    <header class="pri-hdr"> 
+   
+        <div class="pri-hdr__img">
+            <div class="dummy"></div>
+            <div class="pri-hdr__img-verse">
+                <div class="pri-hdr__img-verse-ref">John 3:16 <span class="pri-hdr-img-bible-version">(NIV)</span></div>
+                <div class="pri-hdr__img-verse-text">
+                    For God so loved the world that he gave his one and only Son, that whoever believes in him shall not perish but have eternal life.
+                </div>
+            </div>    
+        </div>  
+    
+</header>
+<div class="grid ">
+    
+      <div class="grid__cell grid__sidebar-left">
+      <div class="sidebar">
+            <img src="/doanything.png" />
+        </div>
+  </div>
+    
+    <div class="grid__cell grid__main-content">
+        <h2>liquid</h2>
+<ul>
+
+  <li><a href="/2017/07/01/how-to-have-happy-home.html">How to have happy home</a> (01 Jul 2017 | Tags: <a href="/tag/jekyll-test.html" rel="tag">jekyll test</a>, <a href="/tag/liquid.html" rel="tag">liquid</a>, <a href="/tag/blogging.html" rel="tag">blogging</a>)</li>
+
+</ul>
+
+<div id="tag-cloud">
+  <a href="/tag/blogging.html" class="set-5">blogging</a> <a href="/tag/jekyll-test.html" class="set-5">jekyll test</a> <a href="/tag/liquid.html" class="set-5">liquid</a>
+</div>
+    </div>  
+    
+</div> 
+ 
+  
+    <footer class="pri-footer grid">
+
+    <div class="prayer-requests grid__cell">
+        <h2>And He said to them, ‘Go into all the world and preach the gospel to every creature.'”</h2>
+    
+    </div>
+
+
+</footer>
+    <script src="//use.edgefonts.net/mr-bedfort;stencil-std;abril-fatface;droid-sans.js"></script>
+
+
+<script
+  src="https://code.jquery.com/jquery-3.2.1.min.js"
+  integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
+  crossorigin="anonymous"></script>
+
+
+
+
+<script>
+$(function() {
+
+    var $sidebar   = $(".grid__sidebar-left"), 
+        $window    = $(window),
+        offset     = $sidebar.offset(),
+        topPadding = 15,
+        mq = window.matchMedia( "(min-width: 1024px)" );
+
+    $window.scroll(function() {
+        if ($window.scrollTop() > offset.top && mq.matchesx) {
+            $sidebar.stop().animate({
+                marginTop: $window.scrollTop() - offset.top + topPadding
+            });
+        if($(window).scrollTop() + $(window).height() == $(document).height()) {
+             $(window).unbind('scroll');
+        }
+        } else {
+            $sidebar.stop().animate({
+                marginTop: 0
+            });
+        }
+    });
+    
+});
+
+</script>
+      
+    
+  </body>
+</html>
