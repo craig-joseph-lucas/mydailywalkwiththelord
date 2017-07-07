@@ -24,7 +24,7 @@ url: "" # the base hostname & protocol for your site, e.g. http://example.com
 twitter_username: jekyllrb
 github_username:  jekyll
 
-tag_page_layout: tag_page
+tag_page_layout: tag-page
 tag_page_dir: tag
 
 baseurl: ""
