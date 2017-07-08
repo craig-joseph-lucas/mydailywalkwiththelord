@@ -19,13 +19,11 @@ $(function() {
         mq = window.matchMedia( "(min-width: 1024px)" );
 
     $window.scroll(function() {
-        if ($window.scrollTop() > offset.top && mq.matchesx) {
+        if ($window.scrollTop() > offset.top && mq.matches) {
             $sidebar.stop().animate({
                 marginTop: $window.scrollTop() - offset.top + topPadding
             });
-        if($(window).scrollTop() + $(window).height() == $(document).height()) {
-             $(window).unbind('scroll');
-        }
+        
         } else {
             $sidebar.stop().animate({
                 marginTop: 0

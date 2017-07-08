@@ -7,9 +7,9 @@ author: Craig Lucas
 contentType: sermonNotes
 sermonDate: 2017-06-28
 sermonVideo: http://cdn.revival.tv/media/mp4/2017/jun/wed/t1130.mp4
-dek: As a christian we strive to act in a righteousness way. We know how important it is do things right away. We also know that our ministry starts at home. Here are some tips on how to have a happy homefrom Pastor John Miller.
-
-categories:  
+dek: As a christian we strive to act in a righteousness way. We know how important it is do things right away. We also know that our ministry starts at home.
+categories: 
+ - liquid 
  - blogging
 ---
 

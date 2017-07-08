@@ -1,0 +1,21 @@
+.tag {
+    display: flex;
+    overflow: hidden;
+    margin: 1em 0;
+    color: #fff;
+    flex-wrap: wrap;		
+    align-items: center;
+    justify-content: space-between;
+}
+.tag__title {
+   flex: 0 0 100%;
+}
+
+.tag__post {
+ flex: 1;
+}
+
+.tag__post-title {}
+.tag__post-dek {}
+.tag__post-date {}
+
