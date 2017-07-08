@@ -29,6 +29,19 @@ tag_page_dir: tag
 
 baseurl: ""
 
+collections:
+  section:
+    output: true
+
+defaults:
+  -
+    scope:
+      path: ""
+      type: section
+    values:
+      layout: "section"
+
+
 sass:
     style: expanded
     line_numbers: true

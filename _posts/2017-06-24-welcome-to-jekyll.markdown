@@ -2,8 +2,7 @@
 layout: post
 title:  "Welcome to Jekyll!"
 date:   2017-06-24 14:11:11 -0700
-categories: jekyll update
-tags: 
+categories: 
 - jekyll 
 - liquid 
 - blogging

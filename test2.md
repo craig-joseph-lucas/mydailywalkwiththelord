@@ -3,7 +3,10 @@ layout: post
 pageType: post
 title: How to have happy home
 author: Craig Lucas
-tags: jekyll liquid blogging
+categories: 
+- jekyll
+- liquid 
+- blogging
 ---
 
 Unless the LORD builds the house, the builders labor in vain. Psalm 127-1
