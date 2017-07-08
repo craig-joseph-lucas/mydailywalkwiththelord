@@ -1,7 +1,9 @@
-- fix tag posts on github
+- fix tag posts on github. DONE
 - work on masthead footer of site
-- finalize blog post
-- work on homepage
+- finalize blog post UI
+- finalize blog post tag pages UI
+- work on homepage.
+- work on testimony
 - work on bible API integration
 - hook up favorite verses carousel
 - hook up submit a prayer modal
