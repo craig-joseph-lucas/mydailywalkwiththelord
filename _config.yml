@@ -30,16 +30,16 @@ tag_page_dir: tag
 baseurl: ""
 
 collections:
-  section:
+  category:
     output: true
 
 defaults:
   -
     scope:
       path: ""
-      type: section
+      type: category
     values:
-      layout: "section"
+      layout: "category"
 
 
 sass:
