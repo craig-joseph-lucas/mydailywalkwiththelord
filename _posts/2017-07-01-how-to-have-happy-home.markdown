@@ -2,13 +2,21 @@
 layout: post
 pageType: post
 title: How to have happy home
+date: 2017-07-01
 author: Craig Lucas
+contentType: sermonNotes
+sermonDate: 2017-06-28
+sermonVideo: http://cdn.revival.tv/media/mp4/2017/jun/wed/t1130.mp4
+dek: As a christian we strive to act in a righteousness way. We know how important it is do things right away. We also know that our ministry starts at home. Here are some tips on how to have a happy homefrom Pastor John Miller.
+
 categories: 
  - liquid 
  - blogging
 ---
 
-Unless the LORD builds the house, the builders labor in vain. Psalm 127-1
+Unless the <div class="data-verse="Psalm 127:1"">LORD </div>builds the house, the builders labor in vain. Psalm 127-1
+
+{% include verse.html verseRef="Psalm 127:1"  %}
 
 Three things for husband and wife must do: 
 1) Salvation - Marriage are two sinners put together. Ephesians 2 says we all have sinned and followed the ways of the world. Imagine having two people living in the same roof. But because of God’s love to us, we are saved. Ephesians 2:8-9 says, “For it is by grace you have been saved, through faith—and this is not from yourselves, it is the gift of God— not by works, so that no one can boast”.
