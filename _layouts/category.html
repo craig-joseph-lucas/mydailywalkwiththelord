@@ -4,13 +4,37 @@ layout: default
 
 ---
 
-<div class="tag">
-    <h1 class="tag__title">Topic: {{ page.tag }}</h1>
-    {% for post in site.categories[page.tag] %}
-        <div class="tag__post">
-          <h2 class="tag__post-title"> <a href="{{ post.url }}">{{ post.title }}</a></h2>
-	  <div class="tag__post-date">{{ post.date | date: '%B %d, %Y' }}</div>
-          <div class="tag__post-dek">{{ post.dek  }}</div>
-        </div>
-    {% endfor %}
+<div class="grid {{ page.pageType }}">    
+
+    {% include left-sidebar.html %}
+
+    <div class="grid__cell grid__main-content">
+       
+            <div class="tag">
+
+                {% assign postCount =  site.categories[page.tag] | size %}
+                {% assign tagPostClass = '' %} 
+                {% if postCount < 10  %}
+                {% assign tagPostClass = 'tag__post--full-width' %}
+                {% endif %}
+
+                <div class="tag__header">	
+                  <h1 class="tag__title">{{ page.tag }}</h1>
+                  <div class="tag__desc">
+                    <p>We've written {{ postCount }} posts on the topic of {{ page.tag }}</p>
+                    <p>{{ page.dek  }}</p>
+                  </div>
+                </div>
+
+                 {% for post in site.categories[page.tag] %}
+                    <div class="tag__post {{ tagPostClass }}">
+                      <h2 class="tag__post-title"> <a href="{{ post.url }}" class="tag__post-title-link">{{ post.title }}</a></h2>
+                       <div class="tag__post-date">{{ post.date | date: '%B %d, %Y' }}</div>
+                      <div class="tag__post-dek">{{ post.dek  }}</div>
+                    </div>
+                {% endfor %}
+            </div>
+
+    </div>
+
 </div>

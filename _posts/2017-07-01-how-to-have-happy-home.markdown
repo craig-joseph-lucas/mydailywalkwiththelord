@@ -11,6 +11,7 @@ dek: As a christian we strive to act in a righteousness way. We know how importa
 
 categories:  
  - blogging
+ - Spiritual Warfare
 ---
 
 Unless the <div class="data-verse="Psalm 127:1"">LORD </div>builds the house, the builders labor in vain. Psalm 127-1

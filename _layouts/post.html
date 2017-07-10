@@ -1,46 +1,36 @@
-<!doctype html>
-<html lang="en">
-    <head>
-        {% include head-meta.html %}
-        {% include head-styles.html %}
-        {% include head-scripts.html %}
-    </head>
-  <body>
-      
+---
+layout: default
+---
       
 
-    {% include header.html %}
+<div class="grid {{ page.pageType }}">    
 
-      
-      
 
-<div class="grid {{ page.pageType }}">
-    
     {% include left-sidebar.html %}
-    
+
     <div class="grid__cell grid__main-content">
         <h1 class="post__title">{{ page.title }}</h1>
-        
+
         {{ content }}
-  <div class="tags">
-    {% assign sortedCategories = page.categories | sort %}
-    {% for category in sortedCategories %}
-        <span class="tag">
-            <a href="/category/{{ category }}.html">#{{ category }}</a>
-        </span>
-    {% endfor %}
-</div>              
+
+        <div class="tags">
+            {% assign sortedCategories = page.categories | sort %}
+            {% for category in sortedCategories %}
+                <span class="tag">
+                    <a href="/category/{{ category }}.html">#{{ category }}</a>
+                </span>
+            {% endfor %}
+        </div>
+
     </div>  
+
     
-</div>            
+</div>     
+     
+
+
+         
     
       
 
 
-
-
-    {% include footer.html %}
-    {% include footer-scripts.html %}      
-  <script src="//use.edgefonts.net/stencil-std.js"></script>    
-  </body>
-</html>

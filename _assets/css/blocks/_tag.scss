@@ -7,26 +7,68 @@
     justify-content: space-between;
     align-content: space-between;
 }
-.tag__title {
+
+.tag__header {
+   padding-bottom: 30px;
+   margin-bottom: 50px;
+   border-bottom: 4px solid #000;   
    flex: 0 0 100%;
+}
+
+.tag__title {
    font-family: stencil-std, sans-serif;
    text-transform: uppercase;
    font-size: 40px;
-   padding-bottom: 30px;
-   margin-bottom: 50px;
-   border-bottom: 4px solid #000;
+}
+
+.tag__desc {
+  flex: 0 0 100%;
 }
 
 .tag__post {
   flex: 0 0 40%;
   flex-grow: 1;
   padding: 0 25px 40px 0; 
-  &:first-of-type {
-    flex: 0 0 100%;
-  }
 }
 
-.tag__post-title {}
-.tag__post-dek {}
-.tag__post-date {}
+.tag__post--full-width { 
+   flex: 0 0 100%;
+   margin-bottom: 10px;
+   div {
+     padding-right: 15px;
+   }
+}
 
+.tag__post-title {
+
+}
+
+.tag__post-title-link {
+  color: #000;
+  transition: all 0.3s ease;
+  font-size: 20px;
+  font-family: droid-sans, sans-serif;
+  line-height: 24px;
+  font-weight: bold;
+  text-decoration: none;
+  display: block;
+  &:hover {
+    color: #2455c3;
+  }	
+
+}
+
+.tag__post-dek {
+  font-size: 15px;
+  color: #666;
+  font-family: droid-sans, sans-serif;
+  line-height: 19px;
+}
+
+.tag__post-date {
+  color: #333;
+  font-size: 12px;
+  margin-bottom: 15px;
+}
+
+.tag > tag__post:first { flex: 0 0 100%; }
